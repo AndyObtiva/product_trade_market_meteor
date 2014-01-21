@@ -17,7 +17,7 @@
     </tr>
     {{#each products}}
     <tr>
-      <td>{{name}}</td>
+      <td class="product-name">{{name}}</td>
       <td class="price">{{price}}</td>
       <td>
         <span><input class="value" type="number" value="0" /></span>
@@ -25,7 +25,7 @@
         <span><button class="up" value="Up">Up</button></span>
       </td>
       <td class="winner">
-
+        {{winner}}
       </td>
     </tr>
     {{/each}}

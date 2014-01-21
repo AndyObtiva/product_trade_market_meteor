@@ -12,20 +12,23 @@ if (Meteor.isClient) {
       var price = parseFloat(priceElement.html());
       var nameElement = parentElement.find('.name')
       var name = nameElement.val();
-      nameElement.val('');
+      var productNameElement = parentElement.find('.product-name')
+      var productName = productNameElement.html();
       var valueElement = parentElement.find('.value')
       var value = parseFloat(valueElement.val());
+
+      var product = Products.findOne({name: productName})
+      Products.update({_id: product._id}, {name: productName, price: (price + value), winner: name})
+
+      nameElement.val('');
       valueElement.val('0');
-      priceElement.html(price + value)
-      var winnerElement = parentElement.find('.winner')
-      winnerElement.html(name)
     }
   });
 }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
-
+//    Products.remove()
     if (Products.find().count() === 0) {
       var product_values = [
         ["Gold Chandlier", 37],
