@@ -1,0 +1,33 @@
+<head>
+  <title>product_trade_market</title>
+</head>
+
+<body>
+  <h1>Product Trade Market!</h1>
+  {{> products}}
+</body>
+
+<template name="products">
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Price</th>
+      <th>Actions</th>
+      <th>Winner</th>
+    </tr>
+    {{#each products}}
+    <tr>
+      <td>{{name}}</td>
+      <td class="price">{{price}}</td>
+      <td>
+        <span><input class="value" type="number" value="0" /></span>
+        <span><input class="name" type="text" value="" placeholder="enter name" /></span>
+        <span><button class="up" value="Up">Up</button></span>
+      </td>
+      <td class="winner">
+
+      </td>
+    </tr>
+    {{/each}}
+  </table>
+</template>
