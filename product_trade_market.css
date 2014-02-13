@@ -1,1 +1,55 @@
 /* CSS declarations go here */
+
+html {
+  height: 100%;
+}
+body {
+  /*font-family: "Times New Roman", Times, serif;*/
+  /*font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;*/
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  height: 100%;
+}
+#container {
+  height: 100%;
+  width: 100%;
+}
+#content {
+  vertical-align: middle;
+}
+#brand {
+  /*margin-top: 280px;*/
+  vertical-align: middle;
+  font-size: 7em;
+  text-shadow: -15px 0 1px #999999, 0 15px 1px #999999, 15px 0 1px #999999, 0 -15px 1px #999999;
+  color: #222222;
+}
+p {
+  font-size: 1.3em;
+  color: #999999;
+}
+.o1 {
+  color: #0000FF;
+  font-style: italic;
+  text-shadow: -1px 0 #999999, 0 1px #999999, 1px 0 #999999, 0 -1px #999999;
+  font-size: 1.2em;
+}
+.o2 {
+  color: #00FF00;
+  font-style: italic;
+  text-shadow: -1px 0 #999999, 0 1px #999999, 1px 0 #999999, 0 -1px #999999;
+  font-size: 1.2em;
+}
+.o3 {
+  color: #FF0000;
+  font-style: italic;
+  text-shadow: -1px 0 #999999, 0 1px #999999, 1px 0 #999999, 0 -1px #999999;
+  font-size: 1.2em;
+  margin-right: 30px;
+}
+/*em {*/
+  /*color: #FF2A00;*/
+/*}*/
+#login {
+  text-align: center;
+}

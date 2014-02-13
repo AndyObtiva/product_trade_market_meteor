@@ -1,13 +1,22 @@
 <head>
   <title>product_trade_market</title>
+  <link href='http://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1><strong>OOO</strong><em>Market!!!</em></h1>
-  {{loginButtons}}
-  {{#if currentUser}}
-    {{> products}}
-  {{/if}}
+  <table id="container">
+    <tr>
+      <td id="content">
+        <div id="brand">
+          <strong><span class="o1">O</span><span class="o2">O</span><span class="o3">O</span>Market</strong>
+        </div>
+        <p><strong>Bold new world of e-commerce coming to you soon!</strong></p>
+        <div id="login">
+          {{loginButtons}}
+        </div>
+      </td>
+    </tr>
+  </table>
 </body>
 
 <template name="products">
